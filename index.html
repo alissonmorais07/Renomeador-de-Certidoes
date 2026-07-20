@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Renomeador de Certidões</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📄 Renomeador de Certidões</h1>
+
+        <p class="descricao">
+            Selecione um ou mais arquivos PDF.
+            O sistema localizará automaticamente o número do pedido
+            e permitirá baixar o arquivo com o nome correto.
+        </p>
+
+        <input
+            type="file"
+            id="pdfFiles"
+            accept="application/pdf"
+            multiple>
+
+        <button id="btnProcessar">
+            Processar PDFs
+        </button>
+
+        <hr>
+
+        <div id="resultado"></div>
+
+        <br>
+
+<button id="btnBaixarTodos" style="display:none;">
+    📦 Baixar Todos
+</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

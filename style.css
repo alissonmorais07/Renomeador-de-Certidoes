@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 900px;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+h1 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 22px;
+}
+
+input[type=file] {
+    margin-bottom: 20px;
+}
+
+button {
+    background: #0d47a1;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-left: 6px solid #0d47a1;
+    border-radius: 8px;
+    padding: 18px;
+    background: #fafafa;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.nomeNovo {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.erro {
+    color: red;
+    font-weight: bold;
+}
+
+.download {
+    margin-top: 15px;
+    background: green;
+}
+
+.download:hover {
+    background: #0b7a0b;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #0d47a1;
+    padding: 20px;
+}
+
+@media (max-width: 900px){
+
+    .container{
+        width:100%;
+    }
+
+}
+
+.nomePedido{
+
+    width:220px;
+
+    padding:10px;
+
+    font-size:18px;
+
+    border-radius:5px;
+
+    border:1px solid #CCC;
+
+}
