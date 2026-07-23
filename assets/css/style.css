@@ -122,3 +122,7 @@ hr {
     border:1px solid #CCC;
 
 }
+
+.oculto {
+    display: none;
+}
